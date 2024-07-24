@@ -26,4 +26,5 @@ def stock_data_microservice(symbol, YOUR_API_KEY):
         return data             # To see in CLI
 
     else:
-        print("Error:", response.status_code, response.text)
+        print(Error)
+        return None
