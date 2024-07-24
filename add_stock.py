@@ -2,18 +2,28 @@
 
 import requests
 
-symbol = input("Write the ticker of the stock you would like to view: ")
-api_url = f'https://api.api-ninjas.com/v1/stockprice?ticker={symbol}'
+def stock_data_microservice(symbol, YOUR_API_KEY):
+    """
+    Fetch data from API from a certain stock
 
-# API request
-response = requests.get(api_url, headers={'X-Api-Key': 'YOUR_API_KEY'})
+    Args:
+        symbol: ticker of stack you want to get data from
+        YOUR_API_KEY: API Key needed to access the API
+    """
 
-# If request goes through, print the data of the stock, else give error message
-if response.status_code == requests.codes.ok:
-    print(response.text)
+    api_url = f'https://api.api-ninjas.com/v1/stockprice?ticker={symbol}'
 
-    # Put stock data into a txt file
-    with open('stock.txt', 'w') as file:
-        file.write(response.text)
-else:
-    print("Error:", response.status_code, response.text)
+    # API request
+    response = requests.get(api_url, headers={'X-Api-Key': 'YOUR_API_KEY'})
+
+    # If request goes through, print the data of the stock, else give error message
+    if response.status_code == requests.codes.ok:
+        data = response.text
+
+        # Put stock data into a txt file
+        with open('stock.txt', 'w') as file:
+            file.write(data)
+        return data             # To see in CLI
+
+    else:
+        print("Error:", response.status_code, response.text)
