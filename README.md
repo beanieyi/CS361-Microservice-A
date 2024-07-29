@@ -48,7 +48,7 @@ socket.send_json({"symbol": sym_input})     # Ticker sent via JSON to microservi
 stock_data = socket.recv_string()           # Receive data from microservice
 print(stock_data)
 ```
-"sym_input" is be where the code will ask for a ticker from the user. The user will be asked and will enter the ticker within the CLI.
+"sym_input" is where the code will ask for a ticker from the user. The user will be asked and will enter the ticker within the CLI.
 
 An example call would look like this:
 
