@@ -9,5 +9,6 @@ Users will need to install the following:
 ```bash
 pip install requests pyzmq python-dotenv
 ```
+Users will also need to input their API key into the provided .env file.
 
 ## How to programmatically REQUEST data
