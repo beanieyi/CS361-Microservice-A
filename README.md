@@ -22,8 +22,8 @@ Once users have entered their API key within .env, they must then run the add_st
 
 ## How to programmatically REQUEST data
 
-Users will need to **run the request.py file in order to programmantically REQUEST data**. This code will send a request to add_stock.py. Below is an example call 
-using the AAPL ticker (Normally, the user will need to enter a ticker):
+Users will need to **run the request.py file in order to programmantically REQUEST data**. Again, add_stock.py must be running PRIOR to this step. 
+This code will send a request to add_stock.py. Below is an example call using the AAPL ticker (Normally, the user will need to enter a ticker):
 
 ```python
 sym_input = "AAPL"
