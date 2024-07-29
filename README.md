@@ -36,3 +36,4 @@ if confirmation == "1":
 elif confirmation == "2":
     print("Exiting program")
 ```
+"sym_input" will, in actual practice, be where the program will ask for a ticker from the user.
