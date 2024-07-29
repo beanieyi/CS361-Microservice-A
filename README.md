@@ -17,24 +17,10 @@ Users will need to **run the request.py file in order to programmantically REQES
 using the AAPL ticker (Normally, the user will need to enter a ticker):
 
 ```python
-import zmq
-
-# Create zmq context, a socket to send, and connect to server
-context = zmq.Context()
-socket = context.socket(zmq.REQ)
-socket.connect("tcp://localhost:5555")
-
-# Confirm or exit program input
-confirmation = input("Would you like to request data from the Stock Data Microservice? 1 for YES, 2 for NO: ")
-
-# Enter ticker to be viewed in CLI and added to txt file
-if confirmation == "1":
-    sym_input = "AAPL"
-    socket.send_json({"symbol": sym_input})     # Ticker from user sent in JSON format
-    stock_data = socket.recv_string()           # Receive data from specified ticker
-    print(stock_data)
-elif confirmation == "2":
-    print("Exiting program")
+sym_input = "AAPL"
+socket.send_json({"symbol": sym_input})     # Ticker from user sent in JSON format
+stock_data = socket.recv_string()           # Receive data from specified ticker
+print(stock_data)
 ```
 "sym_input" will, in actual practice, be where the program will ask for a ticker from the user. The user will be asked and will enter the ticker within the CLI.
 
