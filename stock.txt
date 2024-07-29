@@ -1,0 +1,2 @@
+{"ticker": "QQQ", "name": "Invesco QQQ Trust", "price": 463.69, "exchange": "NASDAQ", "updated": 1722278547}{"ticker": "AAPL", "name": "Apple Inc.", "price": 218.22, "exchange": "NASDAQ", "updated": 1722279109}
+{"ticker": "AAPL", "name": "Apple Inc.", "price": 218.23, "exchange": "NASDAQ", "updated": 1722279139}
