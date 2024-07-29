@@ -2,7 +2,7 @@
 This microservice aims to gather stock info from a user inputed ticker, making an API call to do so. The stock info for the specific ticker will be gathered
 and displayed in the CLI while being saved into the stock.txt file.
 
-## Required Installation and Imports
+## Required Installation, Imports, and API
 
 Users will need to install the following:
 
@@ -15,6 +15,8 @@ Users will need to import the following in the file containing the request code:
 ```python
 import zmq
 ```
+
+Users wil also need to get an API Key from https://api-ninjas.com/api/stockprice. Users must make an account on the given site to receive API key.
 
 ## How to programmatically RECEIVE data
 
