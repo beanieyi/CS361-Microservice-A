@@ -35,7 +35,7 @@ python add_stock.py
 
 Users will need to **run a request file in order to programmantically REQUEST data**. Again, add_stock.py must be running PRIOR to this step. After running the add_stock.py microservice, users will need to open a new terminal and run their request code. 
 
-The code the request code that you will add to your project:
+This is the request code that you will add to your project:
 
 ```python
 # Create zmq context, a socket to send, and connect to server
@@ -44,8 +44,8 @@ socket = context.socket(zmq.REQ)
 socket.connect("tcp://localhost:5555")
 
 sym_input = input("Enter the ticker of stock you would like to see: ")                    
-socket.send_json({"symbol": sym_input})     # Ticker from user sent in JSON format
-stock_data = socket.recv_string()           # Receive data from specified ticker
+socket.send_json({"symbol": sym_input})     # Ticker sent via JSON to microservice
+stock_data = socket.recv_string()           # Receive data from microservice
 print(stock_data)
 ```
 "sym_input" is be where the code will ask for a ticker from the user. The user will be asked and will enter the ticker within the CLI.
@@ -54,8 +54,8 @@ An example call would look like this:
 
 ```python
     sym_input = "AAPL"                  
-    socket.send_json({"symbol": sym_input})     # Ticker from user sent in JSON format
-    stock_data = socket.recv_string()           # Receive data from specified ticker
+    socket.send_json({"symbol": sym_input})     # Ticker sent via JSON to microservice
+    stock_data = socket.recv_string()           # Receive data from microservice
     print(stock_data)
 ```
 
