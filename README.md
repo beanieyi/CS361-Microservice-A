@@ -33,4 +33,6 @@ print(stock_data)
 ```
 "sym_input" will, in actual practice, be where the program will ask for a ticker from the user. The user will be asked and will enter the ticker within the CLI.
 
+## UML sequence diagram 
+
 
