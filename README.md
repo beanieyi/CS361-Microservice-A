@@ -6,5 +6,6 @@ and displayed in the CLI while being saved into the stock.txt file.
 
 ```bash
 pip install requests pyzmq python-dotenv
+```
 
 ## How to programmatically REQUEST data
