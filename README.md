@@ -2,7 +2,7 @@
 This microservice aims to gather stock info from a user inputed ticker, making an API call to do so. The stock info for the specific ticker will be gathered
 and displayed in the CLI while being saved into the stock.txt file.
 
-## Required Installation
+## Required Installation and Imports
 
 Users will need to install the following:
 
@@ -33,7 +33,7 @@ python add_stock.py
 
 ## How to programmatically REQUEST data
 
-Users will need to **run a request file in order to programmantically REQUEST data**. Note, add_stock.py must be running PRIOR to this step. After running the add_stock.py microservice, users will need to open a new terminal and run their request code. 
+Users will need to **run a request file in order to programmantically REQUEST data**. Note, add_stock.py must be running PRIOR to this step. After running the add_stock.py microservice, users will need to open a new terminal and run their request code.
 
 This is the request code that you will add to your project:
 
@@ -59,7 +59,7 @@ An example call would look like this:
     print(stock_data)
 ```
 
-## UML sequence diagram 
+## UML Sequence Diagram 
 
 ![UMLSCREENSHOT](https://github.com/user-attachments/assets/c63edd2c-2c98-4cf2-9139-83d40292ce13)
 
