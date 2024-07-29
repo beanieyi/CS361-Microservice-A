@@ -10,7 +10,7 @@ Users will need to install the following:
 pip install requests pyzmq python-dotenv
 ```
 
-Users will need to import the following in their request file:
+Users will need to import the following in the file containing the request code:
 
 ```python
 import zmq
