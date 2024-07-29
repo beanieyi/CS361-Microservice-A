@@ -16,7 +16,7 @@ Users will need to import the following in the file containing the request code:
 import zmq
 ```
 
-Users wil also need to get an API Key from https://api-ninjas.com/api/stockprice. Users must make an account on the given site to receive API key.
+Users wil also need to get an API Key from https://api-ninjas.com/api/stockprice. Users must make an account on the given site to obtain an API key.
 
 ## How to programmatically RECEIVE data
 
