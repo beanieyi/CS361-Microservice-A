@@ -13,7 +13,7 @@ Users will also need to input their API key into the provided .env file.
 
 ## How to programmatically REQUEST data
 
-Users will need to rurn the request.py file in order to programmantically REQEST data. This code will send a request to add_stock.py. Below is an example call 
+Users will need to **run the request.py file in order to programmantically REQEST data**. This code will send a request to add_stock.py. Below is an example call 
 using the AAPL ticker (Normally, the user will need to enter a ticker):
 
 ```python
