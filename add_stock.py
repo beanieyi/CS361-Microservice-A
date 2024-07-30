@@ -27,7 +27,7 @@ def stock_data_microservice(symbol):
 
         # Put stock data into a txt file
         with open('stock.txt', 'a') as file:
-            file.write("\n" + data)
+            file.write(data + "\n")
         return data             # To see in CLI
     else:
         error_mess = "Error: Could not retrieve data."
